@@ -28,7 +28,7 @@ function DrawerExample() {
   useEffect(() => {
     // // setAvtar(data.data.img)
     setEmail(data.email);
-  }, []);
+  }, [data.email]);
 
   const handleLogOut = () => {
     sessionStorage.clear();

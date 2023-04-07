@@ -1,7 +1,25 @@
 .home-page {
-    zoom: 1;
+  zoom: 1;
+}
+
+.bodytext {
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
+}
+
+@media only screen and (max-width: 425px) {
+  .home-page {
+    zoom: 0.5;
   }
-  
   .bodytext {
     width: 90%;
     overflow: hidden;
@@ -15,23 +33,4 @@
     hyphens: auto;
     white-space: normal;
   }
-  
-  @media only screen and (max-width: 425px) {
-    .home-page {
-      zoom: 0.5;
-    }
-    .bodytext {
-      width: 90%;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow-wrap: break-word;
-      word-wrap: break-word;
-      hyphens: auto;
-      white-space: normal;
-    }
-    
-  }
+}

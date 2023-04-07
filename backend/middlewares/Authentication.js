@@ -1,22 +1,20 @@
-const JWT=require("jsonwebtoken");
-require('dotenv').config();
+const JWT = require("jsonwebtoken");
+require("dotenv").config();
 
-
-const Authentication = async(req,res,next)=>{
-    const token=req.headers?.authorization?.split(" ")[1];
-    if(token?.length>1){
-        const decoded=await JWT.verify(token,process.env.JWT_SECRET);
-        if(decoded){
-            const userid=decoded.userid;
-            req.body.userid=userid;
-            next()
-        }else{
-            res.status(400).send({msg:"Token Expired"})
-        }
-
-    }else{
-        res.status(400).send({msg:"User is not Authenticated"})
+const Authentication = async (req, res, next) => {
+  const token = req.headers?.authorization?.split(" ")[1];
+  if (token?.length > 1) {
+    const decoded = await JWT.verify(token, process.env.JWT_SECRET);
+    if (decoded) {
+      const userid = decoded.userid;
+      req.body.userid = userid;
+      next();
+    } else {
+      res.status(400).send({ msg: "Token Expired" });
     }
-}
+  } else {
+    res.status(400).send({ msg: "User is not Authenticated" });
+  }
+};
 
-module.exports={Authentication}
+module.exports = { Authentication };

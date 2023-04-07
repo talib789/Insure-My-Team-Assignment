@@ -92,7 +92,7 @@ const Login = () => {
             <Tabs mt="10px">
               <TabList>
                 <Tab>SIGN IN</Tab>
-                <Tab>I'M NEW HERE</Tab>
+                <Tab>I`M NEW HERE</Tab>
               </TabList>
               {/**************************************************************  Log In ***************************************/}
               <TabPanels>
@@ -126,7 +126,7 @@ const Login = () => {
                   <Flex mt="10px" gap="10px">
                     <Checkbox defaultChecked></Checkbox>
                     <label>
-                      Keep me signed in. <Link>What's this?</Link>
+                      Keep me signed in. <Link> What`s this?</Link>
                     </label>
                   </Flex>
                   <Flex mb="12px">

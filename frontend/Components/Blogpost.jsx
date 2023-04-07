@@ -42,7 +42,7 @@ function Blogpost() {
     });
 
     let reqOptions = {
-      url: "http://localhost:1234/blog",
+      url: "http://localhost:8008/blog",
       method: "POST",
       headers: headersList,
       data: bodyContent,

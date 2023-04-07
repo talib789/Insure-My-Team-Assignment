@@ -180,9 +180,9 @@ export default function Homepage() {
                   colSpan={{ base: 4, md: 5 }}
                   alignItems={"center"}
                 >
-                  //here loading scrren appear
+                  here loading scrren appear
                   <Center>
-                    <Image src="https://htmlburger.com/blog/wp-content/uploads/2021/07/The-Best-50-Website-Preloaders-Around-the-Web-Example-28.gif" />
+                    <Image src="https://htmlburger.com/blog/wp-content/uploads/2021/07/The-Best-50-Website-Preloaders-Around-the-Web-Example-28.gif" alt="image"/>
                   </Center>
                 </GridItem>
               ) : (
